@@ -489,3 +489,360 @@ body {
         font-size: 1.3rem;
     }
 }
+
+/* ===========================================
+   ESTILOS DEL FOOTER - Lawyer & Businessman
+   =========================================== */
+
+/* Contenedor principal del footer */
+.footer {
+    background: #001f3f;
+    color: #fff;
+    padding: 60px 0 20px;
+    margin-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Contenido del footer (4 columnas) */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Cada columna del footer */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Títulos */
+.footer-col h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.footer-subtitle {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #4CAF50;
+}
+
+/* Listas de enlaces */
+.footer-links,
+.footer-zones,
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-zones li {
+    margin-bottom: 12px;
+}
+
+.footer-links a,
+.footer-zones li {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links a {
+    padding: 3px 0;
+    position: relative;
+}
+
+.footer-links a::before {
+    content: '›';
+    margin-right: 8px;
+    color: #4CAF50;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4CAF50;
+    padding-left: 5px;
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+}
+
+/* Enlace "Ver todas las zonas" */
+.footer-link-all {
+    display: inline-block;
+    margin-top: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px 0;
+}
+
+.footer-link-all::after {
+    content: '→';
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.footer-link-all:hover {
+    transform: translateX(5px);
+}
+
+.footer-link-all:hover::after {
+    transform: translateX(3px);
+}
+
+/* Información de contacto */
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+.footer-contact svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: #4CAF50;
+}
+
+.footer-contact a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.footer-contact a:hover {
+    color: #4CAF50;
+    transform: translateY(-1px);
+}
+
+/* Botón de WhatsApp en redes sociales */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-social a:hover {
+    background: #20BA5A;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* Botón CTA de consulta gratuita */
+.btn-footer-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.2);
+    width: fit-content;
+}
+
+.btn-footer-cta:hover {
+    background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+}
+
+/* Línea divisoria */
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    margin: 40px 0 30px;
+}
+
+/* Sección inferior del footer */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 0.85rem;
+    color: #999;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-legal a {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.85rem;
+}
+
+.footer-legal a:hover {
+    color: #4CAF50;
+}
+
+.footer-legal span {
+    color: #666;
+    user-select: none;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+/* Tablet (768px y menos) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 20px;
+        margin-top: 60px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-col {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-contact li {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .btn-footer-cta {
+        align-self: center;
+    }
+}
+
+/* Mobile (480px y menos) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 0 15px;
+        margin-top: 40px;
+    }
+    
+    .footer-content {
+        gap: 25px;
+    }
+    
+    .footer-col h3 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-col h4 {
+        font-size: 1rem;
+    }
+    
+    .btn-footer-cta {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .footer-contact li {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+}
